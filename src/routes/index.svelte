@@ -37,8 +37,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-    font-size: 11px;
-    letter-spacing: 0.09em;
+    font-size: 14px;
   }
 
   .bg {
@@ -67,7 +66,7 @@
       <br />
       hello@sixth.dk
       <br />
-      cvr 38418998
+      cvr 38.41.89.98
     </figcaption>
   </figure>
 </div>
