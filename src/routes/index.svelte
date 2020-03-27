@@ -1,46 +1,40 @@
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+  figure {
+    text-align: center;
+    margin: 0 auto;
+    margin: 0 0 1em 0;
+  }
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
+  img {
+    height: 120px;
+    margin-bottom: 20px;
+  }
 
-	figure {
-		margin: 0 0 1em 0;
-	}
+  .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 11px;
+    letter-spacing: 0.09em;
+  }
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Sixth</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<div class="logo">
 
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+  <figure>
+    <img alt="Sixth" src="sixth.svg" />
+    <figcaption>frontend development<br>hello@sixth.dk<br>cvr 38418998</figcaption>
+  </figure>
+</div>
