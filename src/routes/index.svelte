@@ -1,3 +1,14 @@
+<script>
+  let bgHeight = 0;
+  let bgWidth = 0;
+  function resize() {
+    if (document && document.body) {
+      bgWidth = document.body.offsetWidth;
+      bgHeight = document.body.offsetHeight;
+    }
+  }
+</script>
+
 <style>
   figure {
     text-align: center;
@@ -5,7 +16,7 @@
     margin: 0 0 1em 0;
   }
 
-  img {
+  figure img {
     height: 120px;
     margin-bottom: 20px;
   }
@@ -25,16 +36,40 @@
     font-size: 11px;
     letter-spacing: 0.09em;
   }
+
+  .bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+  }
 </style>
 
 <svelte:head>
   <title>Sixth</title>
 </svelte:head>
 
-<div class="logo">
+<svelte:window on:load={resize} on:resize={resize} />
 
+<div class="logo">
   <figure>
-    <img alt="Sixth" src="sixth.svg" />
-    <figcaption>frontend development<br>hello@sixth.dk<br>cvr 38418998</figcaption>
+    <img
+      alt="Sixth"
+      src="//res.cloudinary.com/sixth/image/upload/v1585348748/sixth.svg" />
+    <figcaption>
+      frontend development
+      <br />
+      hello@sixth.dk
+      <br />
+      cvr 38418998
+    </figcaption>
   </figure>
 </div>
+
+<div
+  class="bg"
+  style="background-image:url(//res.cloudinary.com/sixth/image/upload/c_crop,g_center,f_auto,h_{bgHeight},q_auto,w_{bgWidth}/v1585348748/bg.webp)" />

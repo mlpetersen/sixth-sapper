@@ -11,9 +11,6 @@ body {
   line-height: 1.5;
   color: #fff;
   background-color: #061925;
-  background-image: url(bg.webp);
-  background-size: cover;
-  background-position: center;
 }
 
 #sapper {
