@@ -1,12 +1,16 @@
 <script>
+  import { onMount } from "svelte";
   let bgHeight = 0;
   let bgWidth = 0;
-  function resize() {
-    if (document && document.body) {
+
+  onMount(() => {
+    function resize() {
       bgWidth = document.body.offsetWidth;
       bgHeight = document.body.offsetHeight;
     }
-  }
+    window.onresize = resize;
+    resize();
+  });
 </script>
 
 <style>
@@ -52,8 +56,6 @@
 <svelte:head>
   <title>Sixth</title>
 </svelte:head>
-
-<svelte:window on:load={resize} on:resize={resize} />
 
 <div class="logo">
   <figure>
