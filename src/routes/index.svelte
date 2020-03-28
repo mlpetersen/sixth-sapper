@@ -1,19 +1,19 @@
 <script>
-  import { onMount } from "svelte";
-  let bg = "";
-  let bgAnimation = "";
-  let blurredBg = `//res.cloudinary.com/sixth/image/upload/c_fill,e_blur:500,q_auto,w_500/v1585348748/bg.jpg`;
+  import { onMount } from 'svelte'
+  let bg = ''
+  let bgAnimation = ''
+  let blurredBg = `//res.cloudinary.com/sixth/image/upload/c_fill,e_blur:500,q_auto,w_500/v1585348748/bg.jpg`
 
   onMount(() => {
     function resize() {
-      const bgWidth = document.body.offsetWidth;
-      const bgHeight = document.body.offsetHeight;
-      bg = `//res.cloudinary.com/sixth/image/upload/c_crop,g_center,f_auto,h_${bgHeight},q_auto,w_${bgWidth}/v1585348748/bg.webp`;
-      bgAnimation = "animate-in";
+      const bgWidth = document.body.offsetWidth
+      const bgHeight = document.body.offsetHeight
+      bg = `//res.cloudinary.com/sixth/image/upload/c_crop,g_center,f_auto,h_${bgHeight},q_auto,w_${bgWidth}/v1585348748/bg.webp`
+      bgAnimation = 'animate-in'
     }
-    window.onresize = resize;
-    resize();
-  });
+    window.onresize = resize
+    resize()
+  })
 </script>
 
 <style>
