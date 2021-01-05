@@ -80,11 +80,11 @@
       alt="Sixth"
       src="//res.cloudinary.com/sixth/image/upload/v1585348748/sixth.svg" />
     <figcaption>
-      frontend development
+      Frontend Development
       <br />
       hello@sixth.dk
       <br />
-      cvr 38.41.89.98
+      CVR 38418998
     </figcaption>
   </figure>
 </div>
